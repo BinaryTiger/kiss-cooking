@@ -1,8 +1,8 @@
-let Recipe : Type = ./recipe-type.dhall
-let Ingredient : Type = ./ingredient-type.dhall
-let Macro : Type = ./macro-type.dhall
-let Unit : Type = ./unit-type.dhall
-let Step : Type = ./step-type.dhall
+let Recipe : Type = ./types/recipe-type.dhall
+let Ingredient : Type = ./types/ingredient-type.dhall
+let Macro : Type = ./types/macro-type.dhall
+let Unit : Type = ./types/unit-type.dhall
+let Step : Type = ./types/step-type.dhall
 
 let Ingredients: List Ingredient =
         [ { name = "flour"
