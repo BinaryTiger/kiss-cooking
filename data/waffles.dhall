@@ -20,13 +20,13 @@ let Step
 
 let Ingredients
     : List Ingredient
-    = [ { name = "flour", quantity = 250, unit = Some Unit.ML }
-      , { name = "salt", quantity = 2, unit = Some Unit.G }
-      , { name = "sugar", quantity = 60, unit = Some Unit.ML }
-      , { name = "milk", quantity = 330, unit = Some Unit.ML }
+    = [ { name = "flour", quantity = 250, unit = Some Unit.ml }
+      , { name = "salt", quantity = 2, unit = Some Unit.g }
+      , { name = "sugar", quantity = 60, unit = Some Unit.ml }
+      , { name = "milk", quantity = 330, unit = Some Unit.ml }
       , { name = "egg", quantity = 2, unit = None Unit }
-      , { name = "vanilla essence", quantity = 10, unit = Some Unit.ML }
-      , { name = "butter", quantity = 30, unit = Some Unit.ML }
+      , { name = "vanilla essence", quantity = 10, unit = Some Unit.ml }
+      , { name = "butter", quantity = 30, unit = Some Unit.ml }
       ]
 
 let Macros

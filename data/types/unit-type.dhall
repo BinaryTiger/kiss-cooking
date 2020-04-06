@@ -1,5 +1,5 @@
 let Unit
     : Type
-    = < G | ML | CUP | TBSP | TSP >
+    = < g | ml | CUP | TBSP | TSP >
 
 in  Unit

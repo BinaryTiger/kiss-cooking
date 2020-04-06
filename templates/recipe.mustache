@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>{{name}}</h1>
+        <h3>Ingredients</h3>
+        <hr/>
+        <table>
+            <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+            </tr>
+            {{#ingredients}}
+            <tr>
+                <td>flour</td>
+                <td>250 ml</td>
+            </tr>
+            {{/ingredients}}
+        </table>
+
+        <h3>Steps</h3>
+        <hr/>
+        <ol>
+            {{#steps}}
+            <li>{{description}}</li>
+            {{/steps}}
+        </ol>
+
+        <h3>Notes</h3>
+        <hr/>
+        <ul>
+            {{#notes}}
+            <li>{{.}}</li>
+            {{/notes}}
+        </ul>
+
+        {{#macros}}
+        <h3>Macros</h3>
+        <hr/>
+        <p>Calories: {{calories}}</p>
+        <p>Fat: {{fat}}</p>
+        <p>Carbs: {{carbs}}</p>
+        <p>Proteins: {{proteins}}</p>
+        {{/macros}}
+    </body>
+</html>
