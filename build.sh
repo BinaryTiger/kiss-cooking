@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 DATA_DIR=./data
 BUILD_DIR=./build
