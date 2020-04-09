@@ -1,22 +1,29 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>{{name}} - KISS</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
+        <a href="list.html"> < TO LIST </a>
         <h1>{{name}}</h1>
         <h3>Ingredients</h3>
         <hr/>
         <table>
             <tr>
                 <th>Ingredient</th>
-                <th>Quantity</th>
+                <th colspan=2>Quantity</th>
             </tr>
             {{#ingredients}}
             <tr>
                 <td>{{name}}</td>
-                <td>{{quantity}} {{unit}}</td>
+                <td>{{quantity}}</td>
+                <td>{{unit}}</td>
             </tr>
             {{/ingredients}}
         </table>

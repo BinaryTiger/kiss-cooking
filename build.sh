@@ -5,6 +5,7 @@ BUILD_DIR=./build
 TEMP_DIR=./build/temp
 STATIC_DIR=./static
 RECIPE_TEMPLATE=./templates/recipe.mustache
+RECIPE_LIST_TEMPLATE=./templates/recipeList.mustache
 
 if [ -d "$BUILD_DIR" ]; then
     rm -rf $BUILD_DIR
@@ -35,3 +36,5 @@ for h in "${!hash_array[@]}"; do
     echo "- name: $h" >> $TEMP_DIR/recipes.yaml
     echo "  hash: ${hash_array[$h]}" >> $TEMP_DIR/recipes.yaml
 done
+
+cat $TEMP_DIR/recipes.yaml | mustache - $RECIPE_LIST_TEMPLATE > $BUILD_DIR/list.html

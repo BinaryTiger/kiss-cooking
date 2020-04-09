@@ -1,7 +1,19 @@
 <html>
-    <head>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>{{name}} - KISS</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
     </head>
 
+    <body>
+    <h1>RECIPE LIST</h1>
+
+    <ul>
+        {{#recipes}}
+        <li><a href="{{hash}}.html">{{name}}</a></li>
+        {{/recipes}}
+    </ul>
+    </body>
 </html>
