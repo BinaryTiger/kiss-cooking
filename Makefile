@@ -1,9 +1,9 @@
 build:
 	make test
-	docker run -it -v ${PWD}:/kiss binarytiger/kiss-build-env:1.0 bash -c "cd kiss && ./build.sh"
+	docker run -v ${PWD}:/kiss binarytiger/kiss-build-env:1.0 bash -c "cd kiss && ./build.sh"
 
 clean:
 	-rm -rf build
 
 test:
-	docker run -it -v ${PWD}:/kiss binarytiger/kiss-build-env:1.0 bash -c "cd kiss && ./test.sh"
+	docker run -v ${PWD}:/kiss binarytiger/kiss-build-env:1.0 bash -c "cd kiss && ./test.sh"
