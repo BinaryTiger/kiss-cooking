@@ -21,11 +21,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2.1.0
-    
-    - name: Install Deps
-      run: |
-        sudo apt update
-        sudo apt install docker-ce
 
     # Runs a single command using the runners shell
     - name: Build
