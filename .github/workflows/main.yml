@@ -39,7 +39,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        target_branch: kiss.github.io
+        target_branch: gh-pages
         keep_history: false
         build_dir: build
         # Write the given domain name to the CNAME file
