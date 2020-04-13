@@ -21,16 +21,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2.1.0
-    
-    - name: Setup GIT token
-      uses: fregante/setup-git-token@v1
-      with:
-        # The token provided by GitHub actions via secrets.GITHUB_TOKEN
-        token: 
-        # The name that will be used as "Author" of future commits
-        name: # optional, default is GitHub actions
-        # The email that will be used as "Author" of future commits
-        email: # optional, default is actions@users.noreply.github.com
 
     # Runs a single command using the runners shell
     - name: Build
