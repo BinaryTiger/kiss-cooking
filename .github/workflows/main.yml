@@ -28,8 +28,17 @@ jobs:
         cd $GITHUB_WORKSPACE
         make
 
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v1.0.0
+#     - name: Upload Artifact
+#       uses: actions/upload-artifact@v1.0.0
+#       with:
+#         name: build.tar.gz
+#         path: .
+    
+    - name: Deploy to pages
+      uses: crazy-max/ghaction-github-pages@v1.4.0
       with:
-        name: build.tar.gz
-        path: .
+        target_branch: kiss.github.io
+        keep_history: false
+        build_dir: build
+        # Write the given domain name to the CNAME file
+        # fqdn: # optional 
