@@ -38,3 +38,4 @@ for h in "${!hash_array[@]}"; do
 done
 
 cat $TEMP_DIR/recipes.yaml | mustache - $RECIPE_LIST_TEMPLATE > $BUILD_DIR/list.html
+rm -rf $TEMP_DIR

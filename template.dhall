@@ -35,12 +35,15 @@ let Steps : List Step =
           }
         ]
 
+let Tags : List Text = [] : List Text
+
 let ${name} : Recipe =
         { name = "{$name}"
         , ingredients = Ingredients
         , macros = Macros
         , notes = Notes
         , steps = Steps
+        , tags = Tags
         }
 
 in ${name}

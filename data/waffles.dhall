@@ -54,6 +54,10 @@ let Steps
         }
       ]
 
+let Tags
+    : List Text
+    = [ "breakfast" ]
+
 let Waffles
     : Recipe
     = { name = "Waffles"
@@ -61,6 +65,7 @@ let Waffles
       , macros = Macros
       , notes = Notes
       , steps = Steps
+      , tags = Tags
       }
 
 in  Waffles

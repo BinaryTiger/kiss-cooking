@@ -11,6 +11,7 @@ let Recipe
       , macros : Macro
       , notes : List Text
       , steps : List Step
+      , tags : List Text
       }
 
 in  Recipe
