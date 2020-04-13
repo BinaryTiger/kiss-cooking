@@ -32,4 +32,3 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: build.tar.gz
-        path: $GITHUB_WORKSPACE
