@@ -1,8 +1,22 @@
-let Recipe : Type = ./recipe-type.dhall
-let Ingredient : Type = ./ingredient-type.dhall
-let Macro : Type = ./macro-type.dhall
-let Unit : Type = ./unit-type.dhall
-let Step : Type = ./step-type.dhall
+let Recipe
+    : Type
+    = ./types/recipe-type.dhall
+
+let Ingredient
+    : Type
+    = ./types/ingredient-type.dhall
+
+let Macro
+    : Type
+    = ./types/macro-type.dhall
+
+let Unit
+    : Type
+    = ./types/unit-type.dhall
+
+let Step
+    : Type
+    = ./types/step-type.dhall
 
 let Ingredients: List Ingredient =
         [ { name = ""
@@ -12,10 +26,10 @@ let Ingredients: List Ingredient =
        ]
 
 let Macros : Macro =
-        { fat = 1
-        , carbs = 1
-        , proteins = 1
-        , calories = 1
+        { fat = 0
+        , carbs = 0
+        , proteins = 0
+        , calories = 0
         }
 
 let Notes : List Text = [] : List Text
@@ -38,7 +52,7 @@ let Steps : List Step =
 let Tags : List Text = [] : List Text
 
 let ${name} : Recipe =
-        { name = "{$name}"
+        { name = "${name}"
         , ingredients = Ingredients
         , macros = Macros
         , notes = Notes
