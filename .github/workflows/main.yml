@@ -34,3 +34,4 @@ jobs:
         target_branch: gh-pages
         keep_history: false
         build_dir: build
+        fqdn: kiss-cooking.notarobot.life
