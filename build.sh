@@ -37,5 +37,5 @@ for h in "${!hash_array[@]}"; do
     echo "  hash: ${hash_array[$h]}" >> $TEMP_DIR/recipes.yaml
 done
 
-cat $TEMP_DIR/recipes.yaml | mustache - $RECIPE_LIST_TEMPLATE > $BUILD_DIR/list.html
+cat $TEMP_DIR/recipes.yaml | mustache - $RECIPE_LIST_TEMPLATE > $BUILD_DIR/index.html
 rm -rf $TEMP_DIR
