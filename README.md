@@ -9,7 +9,6 @@ Somewhere in the 2000s, the web evolved. Since then every cooking website includ
 This was made primarily as a recipe bookmark website for myself. The value derived from the site for other is an added bonus.
 
 ## Tech WHYs
----
 #### Usage of dhall
 
 Since this project is mostly data driven, I wanted to make sure that the data was good. Most configuration language and format are schema-less and dynamically interpreted. dhall let the CI tool make sure that whatever changes were made in the data files that it still fits the general schema of a recipe.
@@ -27,7 +26,6 @@ The docker container is used as a build environment for the project. Having the 
 Free and easy to integrate to any GitHub project.
 
 ## Design WHYs
----
 #### General
 The basic requirements for me where:
  - Must be usable from mobile or desktop (responsive)
