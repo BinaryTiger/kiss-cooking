@@ -65,3 +65,11 @@ th, td {
     padding: 5px 10px;
     text-align: left;
 }
+
+a, a:visited {
+    color: whitesmoke
+}
+
+.jumbo {
+    font-size: 4rem;
+}
