@@ -60,7 +60,7 @@ let Tags
 
 let Pancakes
     : Recipe
-    = { name = "Waffles"
+    = { name = "Pancakes"
       , ingredients = Ingredients
       , macros = Macros
       , notes = Notes
